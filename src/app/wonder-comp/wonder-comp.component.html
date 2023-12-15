@@ -4,7 +4,7 @@
     <li *ngFor="let seven of sevenW">
       <h2>{{seven.name}}</h2>
       <p>{{seven.description}}</p>
-      <img [src]="seven.imageUrl" alt="wonder img">
+      <img [src]="seven.imageUrl" [alt]="seven.name">
     </li>
   </ul>
 </ng-template>
