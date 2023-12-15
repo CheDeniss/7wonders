@@ -1,0 +1,10 @@
+<ng-template [ngIf]="sevenW.length > 0">
+  <h1>{{titleHead | uppercase}}</h1>
+  <ul>
+    <li *ngFor="let seven of sevenW">
+      <h2>{{seven.name}}</h2>
+      <p>{{seven.description}}</p>
+      <img [src]="seven.imageUrl" alt="wonder img">
+    </li>
+  </ul>
+</ng-template>
